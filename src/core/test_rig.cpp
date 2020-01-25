@@ -1,4 +1,4 @@
-#include "template_game.h"
+#include "test_rig.h"
 #include "src/stages/game_stage.h"
 
 void initMetalPlugin(IPluginRegistry& registry);

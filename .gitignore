@@ -19,6 +19,4 @@ res/*.aps
 .vs/
 src/build_version.h
 .DS_Store
-
-# Don't commit symlink
-halley
+compile_commands.json

@@ -14,14 +14,12 @@ if(NOT (DEFINED HALLEYPROJ_BIN_DIR))
 endif()
 
 set (SOURCES
-	"prec.cpp"
-	"src/core/template_game.cpp"
+	"src/core/test_rig.cpp"
 	"src/stages/game_stage.cpp"
 	)
 
 set (HEADERS
-	"prec.h"
-	"src/core/template_game.h"
+	"src/core/test_rig.h"
 	"src/stages/game_stage.h"
 	)
 

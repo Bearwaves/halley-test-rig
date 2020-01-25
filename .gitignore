@@ -19,4 +19,6 @@ res/*.aps
 .vs/
 src/build_version.h
 .DS_Store
-halley/
+
+# Don't commit symlink
+halley

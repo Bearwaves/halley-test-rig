@@ -10,7 +10,7 @@ void initSDLAudioPlugin(IPluginRegistry& registry);
 int TestRig::initPlugins(IPluginRegistry& registry)
 {
 	initMetalPlugin(registry);
-#ifdef USE_IOS
+#ifdef WITH_IOS
 	initIOSSystemPlugin(registry);
 #else
 	initSDLSystemPlugin(registry, {});

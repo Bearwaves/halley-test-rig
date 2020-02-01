@@ -7,6 +7,7 @@ set(HALLEY_PROJECT_EMBED 1)
 set(HALLEY_PATH ${CMAKE_CURRENT_SOURCE_DIR}/halley)
 set(HOTRELOAD 0 CACHE BOOL "Sets whether to hot-reload this project")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${HALLEY_PATH}/cmake/")
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include(HalleyProject)
 
 if(NOT (DEFINED HALLEYPROJ_BIN_DIR))

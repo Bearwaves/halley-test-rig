@@ -10,6 +10,7 @@ build32/
 build-uwp/
 build-external/
 build-ios/
+build-xcode/
 .DS_Store/
 win32_bin/
 win64_bin/
@@ -20,3 +21,4 @@ res/*.aps
 src/build_version.h
 .DS_Store
 compile_commands.json
+.clangd/

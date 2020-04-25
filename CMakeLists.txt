@@ -17,6 +17,7 @@ endif()
 set (SOURCES
 	"src/core/test_rig.cpp"
 	"src/stages/game_stage.cpp"
+	"halley/gen/cpp/registry.cpp"
 	)
 
 set (HEADERS

@@ -40,10 +40,10 @@ bool TestRig::isDevMode() const
 	return true;
 }
 
-std::unique_ptr<Stage> TestRig::startGame(const HalleyAPI* api)
+std::unique_ptr<Stage> TestRig::startGame()
 {
-	api->video->setWindow(WindowDefinition(WindowType::Window, Vector2i(1280, 720), "HalleyTestRig"));
-	api->audio->startPlayback();
+	getAPI().video->setWindow(WindowDefinition(WindowType::Window, Vector2i(1280, 720), "HalleyTestRig"));
+	getAPI().audio->startPlayback();
 	return std::make_unique<GameStage>();
 }
 

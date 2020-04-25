@@ -1,6 +1,8 @@
 #pragma once
 
 #include <halley.hpp>
+#include <memory>
+
 using namespace Halley;
 
 class GameStage : public Stage
@@ -14,4 +16,5 @@ private:
 	float r, g, b;
 	Sprite background;
 	Sprite halleyLogo;
+	std::unique_ptr<TextureRenderTarget> gameCanvasTarget;
 };

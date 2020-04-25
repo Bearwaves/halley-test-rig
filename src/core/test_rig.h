@@ -12,5 +12,5 @@ public:
 	String getName() const override;
 	String getDataPath() const override;
 	bool isDevMode() const override;
-	std::unique_ptr<Stage> startGame(const HalleyAPI*) override;
+	std::unique_ptr<Stage> startGame() override;
 };

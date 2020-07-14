@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cmake -DBUILD_HALLEY_TESTS=0 -DBUILD_HALLEY_TOOLS=0 \
+  -GXcode -DCMAKE_SYSTEM_NAME="iOS" \
+  ..

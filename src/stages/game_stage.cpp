@@ -20,7 +20,7 @@ void GameStage::init()
 			.setColour(col)
 			.setScale(Vector2f(8, 8))
 			.setPos(Vector2f(640, 360));
-	halleyLogo.getMaterial()
+	halleyLogo.getMutableMaterial()
 			.set("u_smoothness", 0.125f)
 			.set("u_outline", 0.0f)
 			.set("u_outlineColour", col);
@@ -53,7 +53,7 @@ void GameStage::onRender(RenderContext& rc) const
 
 		auto view = Rect4f(painter.getViewPort());
 		Sprite bg = background;
-		bg.getMaterial().set("u_col0", Colour4f(r, g, b, 1));
+		bg.getMutableMaterial().set("u_col0", Colour4f(r, g, b, 1));
 		bg.setTexRect(view).setSize(view.getSize()).draw(painter);
 
 		halleyLogo.clone().setPos(Vector2f(view.getSize() / 2)).draw(painter);

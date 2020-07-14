@@ -8,7 +8,15 @@ set(HALLEY_PATH ${CMAKE_CURRENT_SOURCE_DIR}/halley)
 set(HOTRELOAD 0 CACHE BOOL "Sets whether to hot-reload this project")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${HALLEY_PATH}/cmake/")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+
+#set(IOS_BUNDLE_IDENTIFIER "com.bearwaves.halley-test-rig")
+set(IOS_VERSION "1.0.0")
+set(IOS_BUILD_NUMBER "1")
+set(IOS_NAME "Halley Test Rig")
+
 include(HalleyProject)
+
 
 if(NOT (DEFINED HALLEYPROJ_BIN_DIR))
 	set(HALLEYPROJ_BIN_DIR "bin")
